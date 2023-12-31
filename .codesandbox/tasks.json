@@ -1,0 +1,107 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "cd demo",
+      "name": "c"
+    },
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "prepare": {
+      "name": "prepare",
+      "command": "pnpm prepare",
+      "runAtStart": false
+    },
+    "build": {
+      "name": "build",
+      "command": "pnpm build",
+      "runAtStart": false
+    },
+    "exports:check": {
+      "name": "exports:check",
+      "command": "pnpm exports:check",
+      "runAtStart": false
+    },
+    "exports:sync": {
+      "name": "exports:sync",
+      "command": "pnpm exports:sync",
+      "runAtStart": false
+    },
+    "format:check": {
+      "name": "format:check",
+      "command": "pnpm format:check",
+      "runAtStart": false
+    },
+    "format:write": {
+      "name": "format:write",
+      "command": "pnpm format:write",
+      "runAtStart": false
+    },
+    "lint": {
+      "name": "lint",
+      "command": "pnpm lint",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "pnpm test",
+      "runAtStart": false
+    },
+    "typecheck": {
+      "name": "typecheck",
+      "command": "pnpm typecheck",
+      "runAtStart": false
+    },
+    "document": {
+      "name": "document",
+      "command": "pnpm document",
+      "runAtStart": false
+    },
+    "document:types": {
+      "name": "document:types",
+      "command": "pnpm document:types",
+      "runAtStart": false
+    },
+    "document:stories": {
+      "name": "document:stories",
+      "command": "pnpm document:stories",
+      "runAtStart": false
+    },
+    "react": {
+      "name": "react",
+      "command": "pnpm react",
+      "runAtStart": false
+    },
+    "solid": {
+      "name": "solid",
+      "command": "pnpm solid",
+      "runAtStart": false
+    },
+    "vue": {
+      "name": "vue",
+      "command": "pnpm vue",
+      "runAtStart": false
+    },
+    "anatomy": {
+      "name": "anatomy",
+      "command": "pnpm anatomy",
+      "runAtStart": false
+    },
+    "scripts": {
+      "name": "scripts",
+      "command": "pnpm scripts",
+      "runAtStart": false
+    },
+    "website": {
+      "name": "website",
+      "command": "pnpm website",
+      "runAtStart": false
+    }
+  }
+}
