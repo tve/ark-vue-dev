@@ -1,26 +1,10 @@
 {
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
-    {
-      "command": "cd packages/frameworks/vue",
-      "name": "cd"
-    },
-    {
-      "name": "Install Dependencies",
-      "command": "pnpm install"
-    },
-    {
-      "name": "Build ark-ui/vue",
-      "command": "pnpm run build"
-    },
-    {
-      "command": "cd ../../../demo",
-      "name": "cd"
-    },
-    {
-      "name": "Install Demo",
-      "command": "pnpm install"
-    }
+    "pwd; cd packages/frameworks/vue; pnpm install",
+    "pwd; cd packages/frameworks/vue; pnpm run build",
+    "pwd; cd demo; pnpm install",
+    "pwd; cd demo; pnpm run dev"
   ],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
