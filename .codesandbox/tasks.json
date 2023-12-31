@@ -2,11 +2,23 @@
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
     {
-      "command": "cd demo",
-      "name": "c"
+      "command": "cd packages/frameworks/vue",
+      "name": "cd"
     },
     {
       "name": "Install Dependencies",
+      "command": "pnpm install"
+    },
+    {
+      "name": "Build ark-ui/vue",
+      "command": "pnpm run build"
+    },
+    {
+      "command": "cd ../../../demo",
+      "name": "cd"
+    },
+    {
+      "name": "Install Demo",
       "command": "pnpm install"
     }
   ],

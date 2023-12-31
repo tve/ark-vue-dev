@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ark-ui/vue": "link:../packages/frameworks/vue",
     "vue": "^3.3.9"
   },
   "devDependencies": {
