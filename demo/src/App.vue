@@ -1,13 +1,18 @@
 <script setup lang="ts">
 import { Teleport, ref } from "vue";
-import { Dialog } from "@ark-ui/vue";
+import { Menu } from "@ark-ui/vue";
 const open = ref(false);
 </script>
 
 <template>
-  <Dialog.Root>
-    <div style="display: flex; flex-direction: column">
-      <Dialog.Trigger>
+  <Menu.Root>
+    <div style="display: flex;
+        flex-direction: column;
+        width: 20em; height: 10em;
+        background-color: #141010;
+        padding: 1em;">
+      Background div.
+      <Menu.Trigger>
         <div
           style="
             background-color: #220088;
@@ -16,28 +21,26 @@ const open = ref(false);
             cursor: pointer;
           "
         >
-          Open Dialog
+          Open Menu
         </div>
-      </Dialog.Trigger>
-      <Teleport to="body">
-        <Dialog.Backdrop />
-        <Dialog.Positioner>
-          <Dialog.Content
+      </Menu.Trigger>
+        <Menu.Positioner class="menu-positioner"
+            style="display:absolute;
+              left: 20px;
+              top: 20px;">
+          <Menu.Content class="menu-content"
             style="
-              position: absolute;
-              left: 100px;
-              width: 200px;
               background-color: #445;
               padding: 10px;
               border-radius: 10px;
+              border: 2px solid red;
             "
           >
-            <Dialog.Title>Dialog Title</Dialog.Title>
-            <Dialog.Description>Dialog Description</Dialog.Description>
-            <Dialog.CloseTrigger>Close</Dialog.CloseTrigger>
-          </Dialog.Content>
-        </Dialog.Positioner>
-      </Teleport>
+            <Menu.Item id="item1">item 1</Menu.Item>
+            <Menu.Item id="item2">item 2</Menu.Item>
+            <Menu.Item id="item3">item 3</Menu.Item>
+          </Menu.Content>
+        </Menu.Positioner>
     </div>
-  </Dialog.Root>
+  </Menu.Root>
 </template>
